@@ -1,7 +1,14 @@
 package main
 
-import "piscine"
+import (
+	"piscine"
+	"fmt"
+)
 
 func main(){
-	piscine.PrintReverseAlphabet();
+	a := 0
+	b := &a
+	n := &b
+	piscine.UltimatePointOne(&n)
+	fmt.Println(a)
 }

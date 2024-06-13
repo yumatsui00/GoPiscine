@@ -1,7 +1,16 @@
 package main
 
-import "piscine"
+import (
+	"piscine"
+	"fmt"
+)
 
 func main(){
-	piscine.PrintDigits();
+	a := 13
+	b := 2
+	var div int
+	var mod int
+	piscine.DivMod(a, b, &div, &mod)
+	fmt.Println(div)
+	fmt.Println(mod)
 }
