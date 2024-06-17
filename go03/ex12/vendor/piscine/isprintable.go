@@ -1,7 +1,7 @@
 package piscine
 
 func	isprint(a rune) bool {
-	if a < 32 || a > 126 {
+	if a < 32 && a >= 0 {
 		return true
 	}
 	return false
@@ -10,8 +10,8 @@ func	isprint(a rune) bool {
 //! まだだ
 func	IsPrintable(s string) bool {
 	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
-		if isprint(runes[i]) == false {
+	for i := range runes{
+		if isprint(runes[i]) == true {
 			return false
 		} 
 	}
