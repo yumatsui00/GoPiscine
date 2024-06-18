@@ -2,8 +2,10 @@ package main
 
 import (
 	"piscine"
+	"fmt"
 )
 
 func main() {
-	piscine.PrintParams();
+	fmt.Println(piscine.MakeRange(5, 10))
+	fmt.Println(piscine.MakeRange(10, 5))
 }
