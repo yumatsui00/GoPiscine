@@ -1,9 +1,11 @@
 package piscine
 
+import "ft"
+
 func	LastRune(s string) rune {
 	runes := []rune(s)
-	if len(runes) <= 0 {
+	if ft.StrLen(s) <= 0 {
 		return 0
 	}
-	return runes[len(runes) - 1]
+	return runes[ft.StrLen(s) - 1]
 }

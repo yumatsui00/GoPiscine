@@ -1,8 +1,10 @@
 package piscine
 
+import "ft"
+
 func BasicAtoi2(s string) int {
 	ret := 0
-	l := len(s)
+	l := ft.StrLen(s)
 	for i := 0; i < l; i++ {
 		if (s[i] > '9' || s[i] < '0') {
 			return 0

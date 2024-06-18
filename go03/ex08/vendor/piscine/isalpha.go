@@ -23,7 +23,7 @@ func	isdigit(a rune) bool {
 
 func	IsAlpha(s string) bool {
 	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
+	for i := range runes {
 		if (islower(runes[i]) == false && isupper(runes[i]) == false && isdigit(runes[i]) == false) {
 			return false
 		} 

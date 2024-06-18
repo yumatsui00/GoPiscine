@@ -7,7 +7,6 @@ func	isprint(a rune) bool {
 	return false
 }
 
-//! まだだ
 func	IsPrintable(s string) bool {
 	runes := []rune(s)
 	for i := range runes{

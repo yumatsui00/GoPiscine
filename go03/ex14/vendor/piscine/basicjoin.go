@@ -1,9 +1,8 @@
 package piscine
 
 func	BasicJoin(elems []string) string {
-	size := len(elems)
 	var ret	string;
-	for i := 0; i < size; i++ {
+	for i := range elems {
 		ret += elems[i]
 	}
 	return ret

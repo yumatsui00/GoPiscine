@@ -1,9 +1,11 @@
 package piscine
 
+import "ft"
+
 func Atoi(s string) int {
 	ret := 0
 	flag := 1
-	l := len(s)
+	l := ft.StrLen(s)
 	i := 0
 	if s[i] == '+' {
 		i ++;

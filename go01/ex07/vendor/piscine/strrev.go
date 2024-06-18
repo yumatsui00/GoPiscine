@@ -1,10 +1,18 @@
 package piscine
 
-func StrRev(s string) string {
-	l := len(s)
-	rev := make([]byte, l)
-	for i := 0; i < l; i++ {
-		rev[i] = s[l-i-1]
+func strlen(a string) int {
+	count := 0
+	for range a {
+		count++
 	}
-	return string(rev)
+	return count
+}
+
+func StrRev(s string) string {
+	l := strlen(s)
+	rev := ""
+	for i := l - 1; i >= 0; i-- {
+		rev += string(s[i])
+	}
+	return rev
 }

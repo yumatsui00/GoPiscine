@@ -10,7 +10,7 @@ func nv() bool {
 
 func basecheck(base string) bool {
 	runes := []rune(base)
-	len := len(runes)
+	len := ft.StrLen(base)
 	if len < 2 {
 		return nv()
 	}
@@ -35,9 +35,9 @@ func	PrintNbrBase(nbr int, base string) {
 	if nbr < 0 {
 		ft.PrintRune('-')
 		PrintNbrBase(-1 * nbr, base)
-	} else if nbr >= len(runes) {
-		PrintNbrBase(nbr / len(runes), base)
-		ft.PrintRune(runes[nbr % len(runes)])
+	} else if nbr >= ft.StrLen(base) {
+		PrintNbrBase(nbr / ft.StrLen(base), base)
+		ft.PrintRune(runes[nbr % ft.StrLen(base)])
 	} else {
 		ft.PrintRune(runes[nbr])
 	}

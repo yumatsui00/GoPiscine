@@ -6,6 +6,13 @@ import (
 	"unicode/utf8"
 )
 
+func StrLen(a string) int {
+	count := 0
+	for range a {
+		count++
+	}
+	return count
+}
 // PrintRune prints a single rune (Unicode code point) and returns any error
 // if the encoding or the writing fails.
 func PrintRune(r rune) error {

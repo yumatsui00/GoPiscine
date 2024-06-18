@@ -1,12 +1,15 @@
 package piscine
 
-func	Join(strs []string, sep string) string {
-	size := len(strs)
+func	Join(strs []string, sep string) string { 
 	var	ret	string
-	for i := 0; i < size; i++ {
-		ret += strs[i]
-		if i < size - 1 {
+	first := true
+	for i := range strs {
+		if first == true {
+			ret += strs[i]
+			first = false 
+		} else {
 			ret += sep
+			ret += strs[i]
 		}
 	}
 	return ret

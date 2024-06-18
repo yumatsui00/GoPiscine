@@ -9,7 +9,7 @@ func	isupper(a rune) bool {
 
 func	IsUpper(s string) bool {
 	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
+	for i := range runes {
 		if isupper(runes[i]) == false {
 			return false
 		} 

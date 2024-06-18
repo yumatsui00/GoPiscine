@@ -21,9 +21,9 @@ func	isdigit(a rune) bool {
 	return (true)
 }
 
-func	IsUpper(s string) bool {
+func	IsNumeric(s string) bool {
 	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
+	for i := range runes {
 		if isdigit(runes[i]) == false {
 			return false
 		} 

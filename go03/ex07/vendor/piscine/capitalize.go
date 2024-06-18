@@ -1,5 +1,7 @@
 package piscine
 
+import "ft"
+
 func	islower(a rune) bool {
 	if a < 'a' || a > 'z' {
 		return (false)
@@ -24,7 +26,7 @@ func	isdigit(a rune) bool {
 func	Capitalize(s string) string {
 	upperflag := true
 	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
+	for i := 0; i < ft.StrLen(s); i++ {
 		if upperflag == true && islower(runes[i]) == true {
 			runes[i] += 'A' - 'a'
 		}

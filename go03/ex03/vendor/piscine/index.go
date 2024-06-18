@@ -1,10 +1,12 @@
 package piscine
 
+import "ft"
+
 func	Index(s string, toFind string) int {
 	sRune := []rune(s)
 	toFindRune := []rune(toFind)
-	sLen := len(sRune)
-	toFindLen := len(toFindRune)
+	sLen := ft.StrLen(s)
+	toFindLen := ft.StrLen(toFind)
 	if sLen <= 0 || toFindLen <= 0 {
 		return -1
 	}
